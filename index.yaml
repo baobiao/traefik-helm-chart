@@ -2,12 +2,46 @@ apiVersion: v1
 entries:
   traefik:
   - annotations:
+      artifacthub.io/changes: |
+        - "⬆️ Upgrade traefik Docker tag to v2.10.1"
+    apiVersion: v2
+    appVersion: v2.10.1
+    created: "2023-05-03T09:34:09.805442532+08:00"
+    description: A Traefik based Kubernetes ingress controller
+    digest: 1fe74725f5bc3c539482ac553cf810adaeb295f3b81d347b9d10a523cd446c21
+    home: https://traefik.io/
+    icon: https://raw.githubusercontent.com/traefik/traefik/v2.3/docs/content/assets/img/traefik.logo.png
+    keywords:
+    - traefik
+    - ingress
+    - networking
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: emile@vauge.com
+      name: emilevauge
+    - email: daniel.tomcej@gmail.com
+      name: dtomcej
+    - email: ldez@traefik.io
+      name: ldez
+    - email: michel.loiseleur@traefik.io
+      name: mloiseleur
+    - email: charlie.haley@traefik.io
+      name: charlie-haley
+    name: traefik
+    sources:
+    - https://github.com/traefik/traefik
+    - https://github.com/traefik/traefik-helm-chart
+    type: application
+    urls:
+    - https://baobiao.github.io/traefik-helm-chart/traefik-23.0.1.tgz
+    version: 23.0.1
+  - annotations:
       artifacthub.io/changes: "- \"release: ⬆️ Upgrade traefik Docker tag to v2.10.0\"\n-
         \"fix: \U0001F41B update rbac for both traefik.io and containo.us apigroups
         (#836)\"\n- \"breaking: \U0001F4A5 update CRDs needed for Traefik v2.10\"\n"
     apiVersion: v2
     appVersion: v2.10.0
-    created: "2023-04-26T10:47:43.049728208+08:00"
+    created: "2023-05-03T09:34:09.80256613+08:00"
     description: A Traefik based Kubernetes ingress controller
     digest: ef0e4ae41af3135363548cfb988191426437c771924eb0dd72a93a0d2525ea57
     home: https://traefik.io/
@@ -36,4 +70,4 @@ entries:
     urls:
     - https://baobiao.github.io/traefik-helm-chart/traefik-22.3.0.tgz
     version: 22.3.0
-generated: "2023-04-26T10:47:43.043126386+08:00"
+generated: "2023-05-03T09:34:09.797674926+08:00"
